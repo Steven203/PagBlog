@@ -1,0 +1,257 @@
+body {
+	background: radial-gradient(circle, #fff, #3ae);
+	padding: 0px 10px;
+}
+
+.grid-container {
+	display: grid;
+	background: #aea;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 6vh repeat(2, 1fr) 10vh;
+	border: 3px solid #000;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	grid-auto-flow: dense;
+	/*esto*/
+	justify-items: stretch;
+	align-items: stretch;
+	justify-content: stretch;
+	align-content: center;
+	height: 100%;
+}
+
+
+.grid-item {
+	border: 1px solid #000;
+	background: #eee;
+	font-size: 30px;
+	padding: 20px;
+	min-width: min-content;
+}
+
+#header {
+	grid-column: 1 /span 4;
+	box-sizing: border-box;
+	padding: none;
+	font-size: 25px;
+}
+
+
+.grid-item:nth-child(2) {
+	grid-row: 2 /span 2;
+	grid-column: 2 /span 3;
+}
+
+.grid-item:nth-child(3) {
+	grid-row: 2/span 2;
+	background-color: #bbb;
+}
+
+.grid-item:last-child {
+	grid-row: 4/span 1;
+	grid-column: 1/span 4;
+	order: 3;
+}
+
+.contenido {
+	background-color: #ddd;
+	opacity: 70%;
+	padding: 10px;
+	width: min-content;
+	position: sticky;
+	top: 5vh;
+	margin: auto;
+}
+
+.contenido a:visited {
+	color: rgb(19, 105, 122);
+}
+
+.contenido a:hover {
+	color: rgb(86, 172, 167);
+}
+
+ul r {
+	font-size: 40px;
+}
+
+ul li {
+	margin: 0px 20px;
+	font-size: 25px;
+}
+
+ol li {
+	font-size: 20px;
+	margin: 5px 7vh;
+}
+
+h1 {
+	font-size: 35px;
+	color: #000;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 20px 0px;
+	color: #777;
+}
+
+h3 {
+	margin: 20px 0px;
+	font-size: 25px;
+	color: #777;
+}
+
+p {
+	margin: 5px 0px;
+	font-size: 20px;
+}
+
+k {
+	margin: 10vw;
+}
+
+b{
+	font-size: 20px;
+	color: #2ae;
+	display: block;
+	margin: 15px 0px;
+}
+
+v{
+	font-size: 20px;
+	color: rgb(38, 143, 196);
+	display: block;
+	margin: 15px 0px;
+}
+
+.img-container {
+	padding: 10px;
+	max-width: 1000px;
+	margin: auto;
+	object-fit: cover;
+}
+
+.nums {
+	max-width: 200px;
+}
+
+img {
+	max-height: 500px;
+	width: 1000px;
+}
+
+.nav__responsive-ul {
+	display: none;
+	list-style: none;
+}
+
+.nav {
+	background-color: #6bc;
+}
+
+.nav_ul {
+	display: inline-block;
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+}
+
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__li:hover>a
+
+/*cuando se haga hover sobre este este elemento vamos a entrar al "a" y hacemos: */
+	{
+	color: #eee;
+}
+
+.nav__li:hover {
+	color: #eee;
+}
+
+.nav__li i {
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
+}
+
+.nav__responsive-button-container {
+	position: absolute;
+	width: 100%;
+	font-size: 4.8vh;
+	background-color: #69c;
+	margin-top: -64px;
+	z-index: 100;
+}
+
+.nav__responsive-button {
+	padding: 6px 20px;
+	text-align: right;
+	width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+	.nav__ul {
+		display: none !important;
+		/*esto hace desaparecer el primer menu*/
+	}
+
+	nav {
+		height: 10vh;
+		width: 100%;
+		background-color: #69c;
+	}
+
+	.nav__responsive-ul {
+		display: block;
+		position: relative;
+		width: 100%;
+		margin-top: 34px;
+		padding-top: 27px;
+		height: 38px;
+	}
+
+	.nav__li-container {
+		position: relative;
+		top: -1000px;
+		height: calc(100vh - 64px);
+		/*calc(calcular)*/
+		background-color: #9bf;
+		transition: all 1s;
+		z-index: 1;
+		width: 75%;
+		padding-top: 27px;
+	}
+
+	.nav__responsive-li {
+		width: 100%;
+		padding: 9px 20px;
+	}
+
+	.nav__responsive-li i {
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 5px;
+		width: 30px;
+		color: #016;
+	}
+
+	.nav__responsive-li a {
+		color: #016;
+		text-decoration: none;
+	}
+
+	/*en esta parte vamos a hacer que al estar en movil al hacer click en el icono de la 3 barras se habra el menú*/
+
+	.nav__responsive-ul:hover>.nav__li-container {
+		top: -27px;
+
+	}
+}
