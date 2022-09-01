@@ -4,7 +4,7 @@
   
   <head>
 
-    <title>Blogsito7w7</title>
+    <title>Blog Estudiantil</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
           <ul class="nav__ul">
             <li class="nav__li"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
             <li class="nav__li"><i class="fa-solid fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-            <li class="nav__li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Contactos</a></li>
+            <li class="nav__li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Apoyo</a></li>
           </ul>
           <ul class="nav__responsive-ul">
             <div class="nav__responsive-button-container"><div class="nav__responsive-button fas fa-bars"></div>
@@ -29,13 +29,86 @@
             <div class="nav__li-container">
               <li class="nav__responsive-li"><i class="fa-solid fa-house"></i><!--fa-solid=fas--><a href="index.html">Inicio</a></li>
               <li class="nav__responsive-li"><i class="fa-solid fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-              <li class="nav__responsive-li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Contactos</a></li>
+              <li class="nav__responsive-li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Apoyo</a></li>
             </div>
           </ul>
         </nav>
       </div>
       <div class="grid-item">
-        <h1>NO disponible en este momento</h1>
+        <h1>Compuertas Lógicas</h1>
+        <p>Tomado de:<a href="https://hetpro-store.com/TUTORIALES/compuertas-logicas/" rel="noopener noreference" target="_blank">https://hetpro-store.com/</a></p><br>
+
+        <p>Las compuertas lógicas son circuitos electrónicos diseñados para obtener resultados booleanos (0,1), los cuales se obtienen de operaciones lógicas binarias (suma, multiplicación). Dichas compuertas son AND, OR, NOT, NAND, NOR, XOR, XNOR. Además se pueden conectar entre sí para obtener nuevas funciones.A continuación se describirá  las características de las compuertas. Este tipo de dispositivos lógicos se encuentran implementados con transistores y diodos en un semiconductor y actualmente podemos encontrarlas en formas de circuitos integrados lógicos. Al mismo tiempo, puedes tu programar el comportamiento de otra manera, con circuitos reconfigurables o programable, como microcontroladores o FPGAs. Sin embargo, en este tutorial veremos las compuertas implementadas en circuitos independientes y su comportamiento.</p>
+        <h2>Compuerta AND</h2>
+        <p>Para la compuerta AND, La salida estará en estado alto de tal manera que solo si las dos entradas se encuentran en estado alto. Por esta razón podemos considerar que es una multiplicación binaria.<br><br>
+
+        • Operación<br>
+        Q=A.B<br>
+       
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-and.png" alt="compuerta-and">
+        </div>
+        <h2>Compuerta OR</h2>
+        <p>la compuerta OR, la salida estará en estado alto cuando cualquier entrada o ambas estén en estado alto. De tal manera que sea una suma lógica.<br><br>
+
+        • Operación<br>
+        Q=A+B<br>
+          
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-or.png" alt="compuerta-or">
+        </div>
+        <h2>Compuerta NOT</h2>
+        <p>En la compuerta NOT, el estado de la salida es inversa a la entrada. Evidentemente, una negación.<br><br>
+
+       • Operación<br>
+        Q=Q<br>
+          
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-not.png" alt="compuerta-not">
+        </div>
+        <h2>Compuerta NAND</h2>
+        <p>Para la compuerta NAND, cuando las dos entradas estén en estado alto la salida estará en estado bajo. Como resultado de la negación de una AND.<br><br>
+
+        • Operación<br>
+        Q= (A.B)<br>
+          
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-nand.png" alt="compuerta-nand">
+        </div>
+        <h2>Compuerta NOR</h2>
+        <p>En la compuerta NOR, cuando las dos entradas estén estado bajo la salida estará en estado alto. Esencialmente una OR negada.<br><br>
+
+        • Operación<br>
+        Q= (A+B)<br>
+          
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-nor.png" alt="compuerta-nor">
+        </div>
+        <h2>Compuerta XOR</h2>
+        <p>La compuerta XOR Su salida estará en estado bajo cuando las dos entradas se encuentren en estado bajo o alto. Al mismo tiempo podemos observar que entradas iguales es cero y diferentes es uno.<br><br>
+
+        • Operación<br>
+        Q= A.B+A.B<br>
+          
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-xor.png" alt="compuerta-xor">
+        </div>
+        <h2>Compuerta XNOR</h2>
+        <p>Su salida de hecho estará en estado bajo cuando una de las dos entradas se encuentre en estado alto. Igualmente, la salida de una XOR negada.<br><br>
+
+        • Operación<br>
+        Q=A.B+A.B<br>
+          
+        • Tabla de verdad y símbolo</p>
+        <div class="img-container">
+          <img src="recursos/compuerta-xnor.png" alt="compuerta-xnor">
+        </div>
       </div>
       <div class="grid-item">
         <div class="img-container">
