@@ -21,7 +21,7 @@
           <ul class="nav__ul">
             <li class="nav__li"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
             <li class="nav__li"><i class="fa-solid fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-            <li class="nav__li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Apoyo</a></li>
+            <li class="nav__li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Información Extra</a></li>
           </ul>
           <ul class="nav__responsive-ul">
             <div class="nav__responsive-button-container"><div class="nav__responsive-button fas fa-bars"></div>
@@ -29,7 +29,7 @@
             <div class="nav__li-container">
               <li class="nav__responsive-li"><i class="fa-solid fa-house"></i><!--fa-solid=fas--><a href="index.html">Inicio</a></li>
               <li class="nav__responsive-li"><i class="fa-solid fa-user-group"></i><a href="nosotros.html">Sobre Nosotros</a></li>
-              <li class="nav__responsive-li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Apoyo</a></li>
+              <li class="nav__responsive-li"><i class="fa-solid fa-circle-question"></i><a href="contactos.html">Información Extra</a></li>
             </div>
           </ul>
         </nav>
@@ -108,6 +108,43 @@
         • Tabla de verdad y símbolo</p>
         <div class="img-container">
           <img src="recursos/compuerta-xnor.png" alt="compuerta-xnor">
+        </div>
+        <h3>EJERCICIOS</h3>
+        <b>1...</b><p> Cuando el circuito está formado por varias puertas lógicas, se puede ir calculando paso a paso, nombrando la salida de cada una de ellas para simplificar los pasos. Veamos como hacerlo.</p>
+        <div class="img-container">
+          <img src="recursos/ejercicio-compuertas.jpg" alt="ejercicio-compuertas">
+        </div>
+        <p>La salida de la puerta lógica OR (U3) está etiquetada como M, mientras que, la salida de la puerta lógica AND (U4) está etiquetada como N. Seguidamente, calculamos el valor de ambas salidas.<br><br>
+        • M = A + B<br>                  
+        • N = AB<br>
+        La salida del circuito lógico se encuentra en la puerta OR (U5), su valor es:<br><br>
+        • S = M + N<br><br>
+        Si ahora sustituimos los valores obtenidos de M y N tenemos la expresión pedida:<br><br>
+        • S = A + B + A<br><br>
+        <b>2..</b>
+        En este otro ejemplo, procedemos de la misma manera que en el anterior apartado, etiquetando las salidas de las puertas lógicas que hay en el circuito.
+        </p>
+        <div class="img-container">
+          <img src="recursos/ejercicio2-compuertas.jpg" alt="ejercicio-compuertas">
+        </div>
+        <p>A continuación, obtenemos el valor de cada una de las salidas.
+
+        La salida M de la puerta lógica AND (U6) es:<br><br>
+          
+        •M = AB<br><br>
+        Mientras que la salida N de la puerta lógica OR (U7) es:<br><br>
+        • N = M + B<br><br>
+        En la puerta NOT (U9), la salida P es:<br><br>
+        • P = B<br><br>
+        Finalmente, la salida S es el producto negado de N y P:<br><br>
+        • S = NP = (AB + B) B<br><br>
+        <b>3..</b>
+        Implementar con puertas lógicas la siguiente expresión booleana:
+        S = (A+B) + (AB)
+        Para resolver este tipo de ejercicios, vamos haciendo cada término. El primero, es la suma de A y B, por lo tanto, se trata de una puerta OR. El segundo término, es el producto de A y B, así que, lo haremos con una puerta AND. Finalmente vemos que ambos términos se suman y niegan a la vez, es decir, se trata de una puerta NOR. El circuito final que de la siguiente manera:<br><br>
+        </p>
+        <div class="img-container">
+          <img src="recursos/ejercicio3-compuertas.jpg" alt="ejercicio-compuertas">
         </div>
       </div>
       <div class="grid-item">
